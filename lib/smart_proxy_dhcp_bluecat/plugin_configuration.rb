@@ -26,7 +26,7 @@ module Proxy
 
           conf.dependency :dhcp_provider, (lambda do
                             ::Proxy::DHCP::BlueCat::Provider.new(
-                              c.get_dependency(:connection),
+                              conf.get_dependency(:connection),
                               settings[:subnets]
                             )
                           end)
