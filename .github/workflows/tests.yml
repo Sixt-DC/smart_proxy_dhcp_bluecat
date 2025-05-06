@@ -76,7 +76,7 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Setup
         run: bundle install --jobs=3 --retry=3
-      - name: Run rubocop
+      - name: Run tests
         run: bundle exec rake test
   test_ruby_3:
     runs-on: ubuntu-latest
@@ -106,5 +106,5 @@ jobs:
             ${{ runner.os }}-gems-
       - name: Setup
         run: bundle install --jobs=3 --retry=3
-      - name: Run rubocop
+      - name: Run tests
         run: bundle exec rake test
