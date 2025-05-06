@@ -375,7 +375,7 @@ module Proxy
               properties = parse_properties(result["properties"])
               opts = { hostname: properties["absoluteName"] }
 
-              next unless properties["reverseRecord"].to_s == "true".to_s
+              next unless properties["reverseRecord"].to_s == "true"
 
               json2 = rest_get("getEntityById", "id=#{ipid}")
               result2 = JSON.parse(json2)

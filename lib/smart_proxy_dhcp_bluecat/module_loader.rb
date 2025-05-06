@@ -3,7 +3,7 @@ module Proxy
     module BlueCat
       class ModuleLoader < ::Proxy::DefaultModuleLoader
         def log_provider_settings(settings)
-          super(settings)
+          super
           logger.warn("http is used for connection to BlueCat address manager") if settings[:scheme] != "https"
         end
       end
