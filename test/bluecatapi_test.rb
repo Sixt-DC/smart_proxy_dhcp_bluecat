@@ -1,4 +1,5 @@
 require "test_helper"
+require "logger"
 
 class BluecatApiTest < Test::Unit::TestCase
   def setup
