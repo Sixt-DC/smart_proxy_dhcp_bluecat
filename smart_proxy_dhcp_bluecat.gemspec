@@ -8,9 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ["Matthias Hähnel", "The Foreman Team"]
   s.email = ["matthias.haehnel@sixt.com", "theforeman.rubygems@gmail.com"]
   s.homepage = "https://github.com/theforeman/smart_proxy_dhcp_bluecat"
-  s.metadata = {
-    "rubygems_mfa_required" => "true"
-  }
+  s.metadata = { "rubygems_mfa_required" => "true" }
 
   s.summary = "BlueCat DHCP provider plugin for Foreman's smart proxy"
   s.description = "BlueCat DHCP provider plugin for Foreman's smart proxy"
